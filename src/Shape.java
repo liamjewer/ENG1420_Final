@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.ArrayList;
 
 public abstract class Shape {
     Color color;
@@ -7,6 +8,7 @@ public abstract class Shape {
     int x;
     int y;
     boolean visible;
+    ArrayList<Effect> effects;
 
 
 
@@ -28,6 +30,10 @@ public abstract class Shape {
 
     }
 
+    void addEffect(Effect e){
+        effects.add(e);
+    }
+
     public Shape(){
     visible = false;
     }
@@ -39,6 +45,7 @@ public abstract class Shape {
                 x = x1;
                 y = y1;
                 visible = false;
+                effects = new ArrayList<>();
             }
 
 }
