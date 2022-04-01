@@ -44,14 +44,14 @@ public abstract class Shape {
     visible = false;
     }
 
-            public Shape(Color c,Color Bc,int Bt,int x1,int y1){
-                color = c;
-                Bcolor = Bc;
-                borderThicc = Bt;
-                x = x1;
-                y = y1;
-                visible = false;
-                effects = new ArrayList<>();
-            }
+    public Shape(Color c,Color Bc,int Bt,int x1,int y1){
+        color = c;
+        Bcolor = Bc;
+        borderThicc = Bt;
+        x = x1;
+        y = y1;
+        visible = false;
+        effects = new ArrayList<>();
+    }
 
 }

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01ab14bb-1bc4-460c-aee8-003be70b593b" name="Default Changelist" comment="imported to intellij to fix project">
-      <change afterPath="$PROJECT_DIR$/src/Animation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnimationPlayer.java" afterDir="false" />
+    <list default="true" id="01ab14bb-1bc4-460c-aee8-003be70b593b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Effect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ENG1420_Final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ENG1420_Final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnimationPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnimationPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,10 +66,14 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="L:/Downloads/openjfx-18_windows-x64_bin-sdk/javafx-sdk-18/lib/javafx.web.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -114,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648690712162</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added animation classes (incomplete but framework is there)">
+      <created>1648787483805</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648787483805</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -162,7 +174,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="imported to intellij to fix project" />
     <MESSAGE value="implemented shape classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented shape classes" />
+    <MESSAGE value="added animation classes (incomplete but framework is there)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added animation classes (incomplete but framework is there)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
