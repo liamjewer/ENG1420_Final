@@ -1,4 +1,6 @@
-import java.awt.*;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
+
 import java.util.ArrayList;
 
 public abstract class Shape {
@@ -10,6 +12,8 @@ public abstract class Shape {
     boolean visible;
     ArrayList<Effect> effects;
     Type type;
+
+    public abstract void render(GraphicsContext gc);
 
     enum Type{
         Rectangle,
