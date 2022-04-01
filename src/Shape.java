@@ -11,15 +11,8 @@ public abstract class Shape {
     int y;
     boolean visible;
     ArrayList<Effect> effects;
-    Type type;
 
     public abstract void render(GraphicsContext gc);
-
-    enum Type{
-        Rectangle,
-        Circle,
-        Line;
-    }
 
 
     void hide(){

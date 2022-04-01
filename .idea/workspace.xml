@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01ab14bb-1bc4-460c-aee8-003be70b593b" name="Default Changelist" comment="setup framework for animation playing">
-      <change afterPath="$PROJECT_DIR$/src/Change.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Jump.java" afterDir="false" />
+    <list default="true" id="01ab14bb-1bc4-460c-aee8-003be70b593b" name="Default Changelist" comment="rendering logic implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnimationPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnimationPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648790751850</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rendering logic implemented">
+      <created>1648845090155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648845090155</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -186,7 +185,8 @@
     <MESSAGE value="implemented shape classes" />
     <MESSAGE value="added animation classes (incomplete but framework is there)" />
     <MESSAGE value="setup framework for animation playing" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup framework for animation playing" />
+    <MESSAGE value="rendering logic implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="rendering logic implemented" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
