@@ -5,64 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab2cc94e-0101-4daf-bc35-de790e95751a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Animation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AnimationPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Jump.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Animation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/AnimationPlayer$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/AnimationPlayer$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/AnimationPlayer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Change.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Circle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Effect$Type.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Effect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Jump.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Line.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Rectangle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Shape.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ENG1420_Final.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnimationPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Change.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Change.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Effect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Jump.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Line.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Change.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Change.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Effect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Jump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Jump.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

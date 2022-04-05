@@ -1,4 +1,5 @@
 package com.example.demo;
+//Child class of Effect for change color effect
 
 import javafx.scene.paint.Color;
 
@@ -7,8 +8,8 @@ public class Change extends Effect{
         this.color = color;
     }
 
-    Color color;
-    public Change() {
+    Color color;    //color to change to
+    public Change() {  //constructor
         super();
         type = Type.Change;
     }
