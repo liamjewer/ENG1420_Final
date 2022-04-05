@@ -1,14 +1,40 @@
+package com.example.demo;
+
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 
 public abstract class Shape {
-    Color color;
-    Color Bcolor;
-    int borderThicc;
-    int x;
-    int y;
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    Color color = Color.rgb(0,0,0);
+
+    public void setBcolor(Color bcolor) {
+        Bcolor = bcolor;
+    }
+
+    Color Bcolor = Color.rgb(0,0,0);
+
+    public void setBorderThicc(int borderThicc) {
+        this.borderThicc = borderThicc;
+    }
+
+    int borderThicc = 1;
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    int x = 0;
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    int y = 0;
     boolean visible;
     ArrayList<Effect> effects;
 
@@ -38,15 +64,6 @@ public abstract class Shape {
     }
 
     public Shape(){
-    visible = false;
-    }
-
-    public Shape(Color c,Color Bc,int Bt,int x1,int y1){
-        color = c;
-        Bcolor = Bc;
-        borderThicc = Bt;
-        x = x1;
-        y = y1;
         visible = false;
         effects = new ArrayList<>();
     }

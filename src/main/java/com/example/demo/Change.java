@@ -1,10 +1,15 @@
+package com.example.demo;
+
 import javafx.scene.paint.Color;
 
 public class Change extends Effect{
-    Color color;
-    public Change(int frame, Type type, Color color) {
-        super(frame, type);
+    public void setColor(Color color) {
         this.color = color;
+    }
+
+    Color color;
+    public Change() {
+        super();
         type = Type.Change;
     }
 }
