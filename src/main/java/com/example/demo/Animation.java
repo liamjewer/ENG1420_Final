@@ -17,10 +17,11 @@ public class Animation {
     public Animation(String filepath){
         BufferedReader input = null;
         try {
+            //setting file
             File file = new File(filepath);
             input = new BufferedReader(new FileReader(file));
             String line = "";
-
+            //array list for lines from file
             ArrayList<String> lines = new ArrayList<String>();
             while((line= input.readLine())!=null){
                 lines.add(line);
@@ -56,10 +57,13 @@ public class Animation {
                                 //border
                                 c.setBorderThicc(Integer.parseInt(lines.get(i).substring(8).trim()));
                             }else if(lines.get(i).length() >= 6 && lines.get(i).substring(0, 6).equals("color:")) {
+                                //colour
                                 c.setColor(Color.rgb(Integer.parseInt(lines.get(i).substring(7).split(",")[0].trim()), Integer.parseInt(lines.get(i).substring(7).split(",")[1].trim()), Integer.parseInt(lines.get(i).substring(7).split(",")[2].trim())));
                             }else if(lines.get(i).length() >= 7 && lines.get(i).substring(0, 7).equals("bcolor:")) {
+                                //border colour
                                 c.setBcolor(Color.rgb(Integer.parseInt(lines.get(i).substring(8).split(",")[0].trim()), Integer.parseInt(lines.get(i).substring(8).split(",")[1].trim()), Integer.parseInt(lines.get(i).substring(8).split(",")[2].trim())));
                             }else if(lines.get(i).equals("effect")) {
+                                //effects
                                 while(i < lines.size() - 1 && !lines.get(i+1).isBlank() && !lines.get(i+1).equals("effect")){
                                     switch(lines.get(i)){
                                         case("Show"):
@@ -74,10 +78,13 @@ public class Animation {
                                             Jump j = new Jump();
                                             for(int n = 1; n <= 3; n++){
                                                 if(lines.get(i+n).substring(0, 6).equals("start:")){
+                                                    //start frame
                                                     j.setFrame(Integer.parseInt(lines.get(i+n).substring(7).trim()));
                                                 }else if(lines.get(i+n).substring(0, 2).equals("x:")){
+                                                    //x
                                                     j.setX(Integer.parseInt(lines.get(i+n).substring(2).trim()));
                                                 }else if(lines.get(i+n).substring(0, 2).equals("y:")){
+                                                    //y
                                                     j.setY(Integer.parseInt(lines.get(i+n).substring(2).trim()));
                                                 }
                                             }
@@ -87,8 +94,10 @@ public class Animation {
                                             Change ch = new Change();
                                             for(int n = 1; n <= 2; n++){
                                                 if(lines.get(i+n).substring(0, 6).equals("start:")){
+                                                    //start frame
                                                     ch.setFrame(Integer.parseInt(lines.get(i+1).substring(7)));
                                                 }else if(lines.get(i+n).substring(0, 6).equals("color:")){
+                                                    //colour
                                                     ch.setColor(Color.rgb(Integer.parseInt(lines.get(i+n).substring(7).split(",")[0].trim()), Integer.parseInt(lines.get(i+n).substring(7).split(",")[1].trim()), Integer.parseInt(lines.get(i+n).substring(7).split(",")[2].trim())));
                                                 }
                                             }
@@ -102,23 +111,32 @@ public class Animation {
                         }
                         shapes.add(c);
                     }else if (lines.get(i).equals("Rect")){
+                        //rectangle
                         Rectangle r = new Rectangle();
                         while(i < lines.size() && !lines.get(i).isBlank()) {
                             if(lines.get(i).substring(0, 2).equals("x:")) {
+                                //x
                                 r.setX(Integer.parseInt(lines.get(i).substring(3)));
                             }else if(lines.get(i).substring(0, 2).equals("y:")) {
+                                //y
                                 r.setY(Integer.parseInt(lines.get(i).substring(3).trim()));
                             }else if(lines.get(i).length() >= 7 &&lines.get(i).substring(0, 7).equals("length:")) {
+                                //length
                                 r.setLength(Integer.parseInt(lines.get(i).substring(8).trim()));
                             }else if(lines.get(i).length() >= 6 && lines.get(i).substring(0, 6).equals("width:")) {
+                                //width
                                 r.setWidth(Integer.parseInt(lines.get(i).substring(7).trim()));
                             }else if(lines.get(i).length() >= 7 && lines.get(i).substring(0, 7).equals("border:")) {
+                                //border
                                 r.setBorderThicc(Integer.parseInt(lines.get(i).substring(8).trim()));
                             }else if(lines.get(i).length() >= 6 && lines.get(i).substring(0, 6).equals("color:")) {
+                                //colour
                                 r.setColor(Color.rgb(Integer.parseInt(lines.get(i).substring(7).split(",")[0].trim()), Integer.parseInt(lines.get(i).substring(7).split(",")[1].trim()), Integer.parseInt(lines.get(i).substring(7).split(",")[2].trim())));
                             }else if(lines.get(i).length() >= 7 && lines.get(i).substring(0, 7).equals("bcolor:")) {
+                                //border colour
                                 r.setBcolor(Color.rgb(Integer.parseInt(lines.get(i).substring(8).split(",")[0].trim()), Integer.parseInt(lines.get(i).substring(8).split(",")[1].trim()), Integer.parseInt(lines.get(i).substring(8).split(",")[2].trim())));
                             }else if(lines.get(i).equals("effect")) {
+                                //effects
                                 while(i < lines.size() - 1 && !lines.get(i+1).isBlank() && !lines.get(i+1).equals("effect")){
                                     switch(lines.get(i)){
                                         case("Show"):
@@ -133,10 +151,13 @@ public class Animation {
                                             Jump j = new Jump();
                                             for(int n = 1; n <= 3; n++){
                                                 if(lines.get(i+n).length() >= 6 && lines.get(i+n).substring(0, 6).equals("start:")){
+                                                    //start frame
                                                     j.setFrame(Integer.parseInt(lines.get(i+n).substring(7).trim()));
                                                 }else if(lines.get(i+n).substring(0, 2).equals("x:")){
+                                                    //x
                                                     j.setX(Integer.parseInt(lines.get(i+n).substring(2).trim()));
                                                 }else if(lines.get(i+n).substring(0, 2).equals("y:")){
+                                                    //y
                                                     j.setY(Integer.parseInt(lines.get(i+n).substring(2).trim()));
                                                 }
                                                 r.addEffect(j);
@@ -146,8 +167,10 @@ public class Animation {
                                             Change ch = new Change();
                                             for(int n = 1; n <= 2; n++){
                                                 if(lines.get(i+n).substring(0, 6).equals("start:")){
+                                                    //start frame
                                                     ch.setFrame(Integer.parseInt(lines.get(i+1).substring(7)));
                                                 }else if(lines.get(i+n).substring(0, 6).equals("color:")){
+                                                    //colour
                                                     ch.setColor(Color.rgb(Integer.parseInt(lines.get(i+n).substring(7).split(",")[0].trim()), Integer.parseInt(lines.get(i+n).substring(7).split(",")[1].trim()), Integer.parseInt(lines.get(i+n).substring(7).split(",")[2].trim())));
                                                 }
                                             }
@@ -164,18 +187,25 @@ public class Animation {
                         Line l = new Line();
                         while(i < lines.size() && !lines.get(i).isBlank()) {
                             if(lines.get(i).substring(0, 2).equals("x:")) {
+                                //x
                                 l.setX(Integer.parseInt(lines.get(i).substring(3)));
                             }else if(lines.get(i).substring(0, 2).equals("y:")) {
+                                //y
                                 l.setY(Integer.parseInt(lines.get(i).substring(3).trim()));
                             }else if(lines.get(i).substring(0, 3).equals("x2:")) {
+                                //x2
                                 l.setX2(Integer.parseInt(lines.get(i).substring(4)));
                             }else if(lines.get(i).substring(0, 3).equals("y2:")) {
+                                //y2
                                 l.setY2(Integer.parseInt(lines.get(i).substring(4).trim()));
                             }else if(lines.get(i).length() >= 7 && lines.get(i).substring(0, 7).equals("border:")) {
+                                //border
                                 l.setBorderThicc(Integer.parseInt(lines.get(i).substring(8).trim()));
                             }else if(lines.get(i).length() >= 6 && lines.get(i).substring(0, 6).equals("color:")) {
+                                //colour
                                 l.setColor(Color.rgb(Integer.parseInt(lines.get(i).substring(7).split(",")[0].trim()), Integer.parseInt(lines.get(i).substring(7).split(",")[1].trim()), Integer.parseInt(lines.get(i).substring(7).split(",")[2].trim())));
                             }else if(lines.get(i).equals("effect")) {
+                                //effects
                                 while(i < lines.size() - 1 && !lines.get(i+1).isBlank() && !lines.get(i+1).equals("effect")){
                                     switch(lines.get(i)){
                                         case("Show"):
@@ -190,10 +220,13 @@ public class Animation {
                                             Jump j = new Jump();
                                             for(int n = 1; n <= 3; n++){
                                                 if(lines.get(i+n).length() >= 6 && lines.get(i+n).substring(0, 6).equals("start:")){
+                                                    //start frame
                                                     j.setFrame(Integer.parseInt(lines.get(i+n).substring(7).trim()));
                                                 }else if(lines.get(i+n).substring(0, 2).equals("x:")){
+                                                    //x
                                                     j.setX(Integer.parseInt(lines.get(i+n).substring(2).trim()));
                                                 }else if(lines.get(i+n).substring(0, 2).equals("y:")){
+                                                    //y
                                                     j.setY(Integer.parseInt(lines.get(i+n).substring(2).trim()));
                                                 }
                                             }
@@ -203,8 +236,10 @@ public class Animation {
                                             Change ch = new Change();
                                             for(int n = 1; n <= 2; n++){
                                                 if(lines.get(i+n).substring(0, 6).equals("start:")){
+                                                    //start frame
                                                     ch.setFrame(Integer.parseInt(lines.get(i+1).substring(7)));
                                                 }else if(lines.get(i+n).substring(0, 6).equals("color:")){
+                                                    //colour
                                                     ch.setColor(Color.rgb(Integer.parseInt(lines.get(i+n).substring(7).split(",")[0].trim()), Integer.parseInt(lines.get(i+n).substring(7).split(",")[1].trim()), Integer.parseInt(lines.get(i+n).substring(7).split(",")[2].trim())));
                                                 }
                                             }

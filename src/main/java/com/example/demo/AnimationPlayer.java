@@ -9,21 +9,24 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
 
 public class AnimationPlayer extends Application {
+    public void setAnimation(Animation animation) {
+        this.animation = animation;
+    }
+
     Animation animation;
-    int currentFrame;
+    int currentFrame = 0;
 
     Group root;
     Scene scene;
     Canvas canvas;
     GraphicsContext gc;
 
-    public static void main(String[] args) {
+    public static void play() {
         launch();
     }
-
+    public void animationPlayer(){}
     @Override
     public void start(Stage stage) throws Exception {
-        animation = new Animation("src\\main\\java\\com\\example\\demo\\input.txt");
         root = new Group();
         scene = new Scene(root, 800, 450);
         canvas = new Canvas(800,450);
