@@ -9,10 +9,15 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
 
 public class AnimationPlayer extends Application {
-    public void setAnimation(Animation animation) {
-        this.animation = animation;
+    public void setAnimationPath(String path) {
+        animationPath = path;
     }
 
+    public static void main(String[] args){
+        launch();
+    }
+
+    String animationPath;
     Animation animation;
     int currentFrame = 0;
 
@@ -21,12 +26,17 @@ public class AnimationPlayer extends Application {
     Canvas canvas;
     GraphicsContext gc;
 
-    public static void play() {
+    public void play() {
         launch();
     }
-    public void animationPlayer(){}
+
+    public AnimationPlayer(){
+}
+
     @Override
     public void start(Stage stage) throws Exception {
+        animation = new Animation("src\\main\\java\\com\\example\\demo\\input.txt");
+        //setup javaFX window
         root = new Group();
         scene = new Scene(root, 800, 450);
         canvas = new Canvas(800,450);
@@ -36,6 +46,7 @@ public class AnimationPlayer extends Application {
         stage.setScene(scene);
         stage.show();
 
+        //start the recursive function to animate
         animate();
     }
 
